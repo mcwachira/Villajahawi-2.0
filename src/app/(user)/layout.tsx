@@ -4,6 +4,7 @@ import "../globals.css";
 import { Inter as FontSans } from "next/font/google"
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/src/components/theme-provider";
+import Navbar from "@/src/components/ui/Header/Navbar"
 
 
 const fontSans = FontSans({
@@ -34,6 +35,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+             <Navbar/>
    {children}
 
           </ThemeProvider>
