@@ -83,7 +83,7 @@ const Navbar = () => {
         <span
           className={clsx(
             "absolute block h-0.5 rotate-0 transform rounded-full",
-            "bg-background text-foreground",
+            "bg-primary text-primary-foreground",
             "opacity-100 transition-all duration-300 ease-in-out group-hover:bg-slate-900",
             open ? "top-1.5 left-1/2 w-0" : "top-0 left-0 w-full"
           )}
@@ -91,7 +91,7 @@ const Navbar = () => {
         <span
           className={clsx(
             "absolute left-0 top-1.5 block h-0.5 w-full transform rounded-full",
-            "bg-background text-foreground",
+            "bg-primary text-primary-foreground",
             "opacity-100 transition-all duration-300 ease-in-out group-hover:bg-slate-900",
             open ? "rotate-45" : "rotate-0"
           )}
@@ -99,7 +99,7 @@ const Navbar = () => {
         <span
           className={clsx(
             "absolute left-0 top-1.5 block h-0.5 w-full transform rounded-full",
-            "bg-background text-foreground",
+            "bg-primary text-primary-foreground",
             "opacity-100 transition-all duration-300 ease-in-out group-hover:bg-slate-900",
             open ? "-rotate-45" : "rotate-0"
           )}
@@ -107,7 +107,7 @@ const Navbar = () => {
         <span
           className={clsx(
             "absolute block h-0.5 rotate-0 transform rounded-full",
-            "bg-background text-foreground",
+            "bg-primary text-primary-foreground",
             "opacity-100 transition-all duration-300 ease-in-out group-hover:bg-slate-900",
             open ? "top-1.5 left-1/2 w-0" : "left-0 top-3 w-full"
           )}
