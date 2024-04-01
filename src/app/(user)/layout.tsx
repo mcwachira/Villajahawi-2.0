@@ -5,6 +5,8 @@ import { Inter as FontSans } from "next/font/google"
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/src/components/theme-provider";
 import Navbar from "@/src/components/ui/Header/Navbar"
+import Footer from "@/src/components/ui/Footer/Footer"
+
 
 
 const fontSans = FontSans({
@@ -37,7 +39,7 @@ export default function RootLayout({
           >
              <Navbar/>
    {children}
-
+<Footer/>
           </ThemeProvider>
         
      </body>
