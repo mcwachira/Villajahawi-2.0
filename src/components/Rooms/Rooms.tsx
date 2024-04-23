@@ -22,7 +22,7 @@ import "swiper/css/autoplay";
 import Container from "@/src/components/ui/Container";
 import { useTheme } from "next-themes";
 import Link from "next/link";
-import FormikControl from "./FormComponents/FormikControl";
+import FormikControl from "@/src/components/ui/FormComponents/FormikControl";
 
 const Rooms = () => {
   const roomsData = [
@@ -60,7 +60,7 @@ const Rooms = () => {
 
   const { theme, setTheme } = useTheme();
 
-  let roomsCount = parseFloat(roomsData.length);
+  let roomsCount = parseInt(roomsData?.length);
 
   let [Index, setIndex] = useState(1);
 
@@ -184,20 +184,20 @@ const Rooms = () => {
       <section
         className={clsx(
           "relative overflow-hidden pt-20 lg:pt-[120px] pb-10 lg:pb-20 h-full  border-b  border-slate-200/80",
-          theme === "dark" ? "bg-[#041434]" : "bg-[#F3F4F6]"
+          theme === "dark" ? "bg-dark" : "bg-light"
         )}
       >
-        <h2 className="font-display  text-center text-4xl font-semibold text-slate-900 sm:text-5xl">
+        <h2 className="font-display  text-center text-4xl font-semibold dark:text-dark light:text-light sm:text-5xl">
           Our Beautiful Rooms
         </h2>
 
 
-        <div className="py-2 grid justify-center md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-16 lg:gap-8 my-12 mx-6 ">
+        <div className="py-2 grid justify-center items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-16 lg:gap-8 my-12 mx-6 ">
           {roomsData.map((room, roomIndex) => (
             <div
               key={roomIndex}
               className={clsx(
-                "h-full w-full lg:w-3/4 rounded-xl p-6  overflow-hidden shadow-lg hover:shadow-xl",
+                "h-full w-full md:1/2 lg:w-3/4 rounded-xl p-6  overflow-hidden shadow-lg hover:shadow-xl",
                 theme === "dark" ? "bg-[#F3F4F6]" : "bg-[#F3F4F6]"
               )}
             >

@@ -1,6 +1,7 @@
 
 import Hero from "@/src/components/Hero/Hero"
 import Facilities from "@/src/components/Facilities/Facilities"
+import Rooms from "@/src/components/Rooms/Rooms"
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Hero/>
 
       <Facilities/>
-      {/*<Rooms />*/}
+      <Rooms/>
       
       {/*<Testimonial />*/}
       {/* <Carousel images={imageData}/> */}
