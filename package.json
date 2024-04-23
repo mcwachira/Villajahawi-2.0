@@ -20,6 +20,7 @@
     "@sanity/vision": "^3.32.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "formik": "^2.4.5",
     "framer-motion": "^11.0.24",
     "lucide-react": "^0.344.0",
     "next": "14.1.1",
@@ -39,7 +40,8 @@
     "styled-components": "^6.1.8",
     "swiper": "^10.3.1",
     "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^3.0.1",
