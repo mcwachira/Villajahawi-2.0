@@ -10,26 +10,32 @@ import { motion } from "framer-motion";
 import Container from "@/src/components/ui/Container";
 import { Button } from "@/src/components/ui/Button"
 import { ThemeToggle } from "@/src/components/theme-toggle"
-import darkLogo from '@/src/assets/images/logos/web/png/color-logo-no-background.png'
-import lightLogo from '@/src/assets/images/logos/web/png/color-logo-background.png'
+import darkLogo from '/public/assets/images/logos/web/png/color-logo-no-background.png'
+import lightLogo from '/public/assets/images/logos/web/png/color-logo-background.png'
 
 
 const links = [
   {
-    label:"Home" , href:'/'
+    label: "Home",
+    href: "/",
   },
   {
-    label:"About" , href:'/about'
+    label: "Accommodation",
+    href: "/accommodation",
   },
   {
-    label:"Rooms" , href:'/rooms'
+    label: "Amenities",
+    href: "/amenities",
+  },
+
+  {
+    label: "Blog",
+    href: "/articles",
   },
   {
-    label:"Blog" , href:'/blog'
+    label: "Contact",
+    href: "/contact",
   },
-  {
-    label:"Contact" , href:'/contact'
-  }
 ];
 
 const Navbar = () => {

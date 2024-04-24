@@ -4,8 +4,8 @@ import Image from "next/image";
 import React from "react";
 import Container from "@/src/components/ui/Container";
 import clsx from "clsx";
-import darkLogo from '@/src/assets/images/logos/web/png/color-logo-no-background.png'
-import lightLogo from '@/src/assets/images/logos/web/png/color-logo-background.png'
+import darkLogo from '/public/assets/images/logos/web/png/color-logo-no-background.png'
+import lightLogo from '/public/assets/images/logos/web/png/color-logo-background.png'
 
 import { useTheme } from "next-themes";
 import { GoLocation } from "react-icons/go";

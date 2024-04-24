@@ -3,7 +3,7 @@ import { sanityClient } from "./sanity.client";
 import imageUrl from '@sanity/image-url'
 export const fetchPosts = async () => {
     const posts = await sanityClient.fetch(
-      groq`*[_type == "post"]  | order(publishedAt desc){
+      groq`*[_type == "post"]| order(publishedAt desc){
          _id,
           title,
           author =>{
@@ -23,6 +23,7 @@ export const fetchPosts = async () => {
         }`
     );
 
+    console.log(posts)
     return posts;
 };
 export const fetchEvents = async () => {

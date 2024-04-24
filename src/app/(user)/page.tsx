@@ -2,8 +2,16 @@
 import Hero from "@/src/components/Hero/Hero"
 import Facilities from "@/src/components/Facilities/Facilities"
 import Rooms from "@/src/components/Rooms/Rooms"
+import Testimonial from "@/src/components/Testimonial/Testimonial"
+import { fetchPosts } from "@/src/sanity.query"
+import Post from "@/src/schemaTypes/post"
+import { FeaturedPosts } from "@/src/components/Posts/FeaturedPosts"
 
-export default function Home() {
+export default async function Home() {
+  const posts: [Post] = await fetchPosts();
+// const post = posts.map((post) => post)
+//
+//   console.log(post)
   return (
 
 
@@ -14,14 +22,15 @@ export default function Home() {
       <Facilities/>
       <Rooms/>
       
-      {/*<Testimonial />*/}
+      <Testimonial />
+      {/*<FeaturedPosts posts={posts} />*/}
       {/* <Carousel images={imageData}/> */}
       {/*<Facilities />*/}
       {/*<Card />*/}
 
       {/*<TestimonialTwo />*/}
       {/* <Gallery images={galleryData}/> */}
-      {/*<Blog/>*/}
+      {/*<Posts/>*/}
       {/* 
 
 
